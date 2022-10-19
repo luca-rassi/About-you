@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>freeCodeCamp Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time and letting me know more about who visit my gihub.</p>
+    <form id="survey-form" action="">
+    <fieldset>
+      <label id="name-label" for="name">Name: <input id="name" type="text" placeholder="Enter your name" required></input></label>
+      <label id="email-label" for="email">Email: <input id="email" type="email" placeholder="Enter your email" required></input></label>
+      <label id="ddd-label" for="ddd">DDD(optional): <input id="ddd" type="number" placeholder="XX" min=0 max=99></input></label>
+      <label id="number-label" for="number">Number(optional): <input id="number" type="number" placeholder="XXXXXXXXX" min=100000000 max=999999999></input></label>
+      <label for="dropdown">Genre?
+          <select id="dropdown" name="dropdown" required>
+            <option value="">(select one)</option>
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+            <option value="3">Other</option>
+          </select>
+        </label>
+        <label> Are you a programmer?
+        <label for="yes"><input id="yes" type="radio" name="programmer" value="yes"/> Yes :)</label>
+        <label for="no"><input id="no" type="radio" name="programmer" value="no"/> No :(</label>
+        <label> What programming languages do you have some experience with?</label>
+        <label for="C>"><input id="C" type="checkbox" name="proglang" value="C">C</label>
+        <label for="C++>"><input id="C++" type="checkbox" name="proglang" value="C++">C++</label>
+        <label for="C#>"><input id="C#" type="checkbox" name="proglang" value="C#">C#</label>
+        <label for="Python>"><input id="Python" type="checkbox" name="proglang" value="Python">Python</label>
+        <label for="R>"><input id="R" type="checkbox" name="proglang" value="R">R</label>
+        <label for="HTML>"><input id="HTML" type="checkbox" name="proglang" value="HTML">HTML</label>
+        <label for="Java>"><input id="Java" type="checkbox" name="proglang" value="Java">Java</label>
+        <label for="JavaScript>"><input id="JavaScript" type="checkbox" name="proglang" value="JavaScript">JavaScript</label>
+        <label for="others>"><input id="others" type="checkbox" name="proglang" value="others">others</label>
+        <label for="otherprog">Which others programming languages do you know?
+          <textarea id="otherprog" name="otherprog" rows="3" cols="30" placeholder="Matlab, prolog..."></textarea>
+        </label>
+        <input type="submit" value="Submit" />
+    </fieldset>  
+    </form>
+  </body>
+  <footer>
+      <p>
+        No Copyright - visit my profile <a href="https://www.github.com/luca-rassi">Github.com/luca-rassi</a>
+      </p>
+    </footer>
+</html>
